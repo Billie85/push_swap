@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 22:43:47 by root              #+#    #+#             */
-/*   Updated: 2022/06/04 21:23:02 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:07:39 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ void	radix_sort(t_node *stack_a, int total_bits, int argc)
 
 	stack_b = NULL;
 	stack_b = first_node(-1);
+	if (stack_b == NULL)
+		return (free(stack_b));
 	i = 0;
 	while (i < total_bits)
 	{

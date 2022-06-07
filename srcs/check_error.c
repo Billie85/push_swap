@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 22:47:50 by root              #+#    #+#             */
-/*   Updated: 2022/06/04 21:21:22 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:06:07 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ t_bool	duplicate_elements_in_array(int argc, char *argv[])
 
 t_bool	is_valid_number(char *num)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (num[0] == '-' || num[0] == '+')
@@ -66,6 +66,8 @@ long long	ft_atoll(char *str)
 	i = 0;
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
+		if (ans > INT_MAX)
+			return ((long long)INT_MAX + 1);
 		ans = (ans * 10) + (str[i] - '0');
 		i++;
 	}
@@ -86,6 +88,7 @@ int	check_error(int argc, char *argv[])
 {
 	int	i;
 
+	i = 0;
 	while (argv[i] != NULL)
 	{
 		if (!is_valid_number(argv[i]))

@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 23:02:53 by root              #+#    #+#             */
-/*   Updated: 2022/06/04 21:12:05 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:25:08 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,9 +49,13 @@ int	main_helper(int argc, int *copy_array, int *origin_arg)
 	if (array_is_sorted(origin_arg, argc - 1))
 		return (free_two_data(&copy_array, &origin_arg));
 	compressed_arr = sort_compression(argc, copy_array, origin_arg);
+	if (compressed_arr == NULL)
+		return (free_two_data(&copy_array, &origin_arg));
 	max_number = find_max_value(compressed_arr, argc - 1);
 	bits_width = count_bits(max_number);
 	stack_a = new_node_data(argc, compressed_arr);
+	if (stack_a == NULL)
+		return (free_two_data(&copy_array, &origin_arg));
 	if (argc <= 6)
 		sort_than_6args(stack_a, argc -1);
 	else

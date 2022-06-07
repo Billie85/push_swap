@@ -1,0 +1,39 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/root/push_swap'
+gcc -Wall -Wextra -Werror -I includes -c srcs/binary_search.c -o srcs/binary_search.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/check_error.c -o srcs/check_error.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/find_max_value.c -o srcs/find_max_value.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/new_node_data.c -o srcs/new_node_data.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/sort_compression.c -o srcs/sort_compression.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/bubble_sort.c -o srcs/bubble_sort.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/count_bits.c -o srcs/count_bits.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/push.c -o srcs/push.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/return_error.c -o srcs/return_error.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/check_array_sorted.c -o srcs/check_array_sorted.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/check_null.c -o srcs/check_null.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/is_sorted.c -o srcs/is_sorted.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/radix_sort.c -o srcs/radix_sort.o
+gcc -Wall -Wextra -Werror -I includes -c srcs/count_nodes.c -o srcs/count_nodes.o
+gcc -Wall -Wextra -Werror -I includes -c operations/ra.c -o operations/ra.o
+gcc -Wall -Wextra -Werror -I includes -c operations/rra.c -o operations/rra.o
+gcc -Wall -Wextra -Werror -I includes -c operations/sa.c -o operations/sa.o
+gcc -Wall -Wextra -Werror -I includes -c operations/rb.c -o operations/rb.o
+gcc -Wall -Wextra -Werror -I includes -c libft/ft_atoi.c -o libft/ft_atoi.o
+gcc -Wall -Wextra -Werror -I includes -c libft/ft_isdigit.c -o libft/ft_isdigit.o
+gcc -Wall -Wextra -Werror -I includes -c libft/ft_lstsize.c -o libft/ft_lstsize.o
+gcc -Wall -Wextra -Werror -I includes -c libft/ft_memcpy.c -o libft/ft_memcpy.o
+gcc -Wall -Wextra -Werror -I includes -c libft/ft_memset.c -o libft/ft_memset.o
+gcc -Wall -Wextra -Werror -I includes -c list/add_back.c -o list/add_back.o
+gcc -Wall -Wextra -Werror -I includes -c list/first_node.c -o list/first_node.o
+gcc -Wall -Wextra -Werror -I includes -c list/ft_lstlast.c -o list/ft_lstlast.o
+gcc -Wall -Wextra -Werror -I includes -c list/pop_back.c -o list/pop_back.o
+gcc -Wall -Wextra -Werror -I includes -c list/push_node.c -o list/push_node.o
+gcc -Wall -Wextra -Werror -I includes -c list/list_free.c -o list/list_free.o
+gcc -Wall -Wextra -Werror -I includes -c less_than_5args/sort_argument_size3.c -o less_than_5args/sort_argument_size3.o
+gcc -Wall -Wextra -Werror -I includes -c less_than_5args/sort_argument_size4.c -o less_than_5args/sort_argument_size4.o
+gcc -Wall -Wextra -Werror -I includes -c less_than_5args/sort_argument_size5.c -o less_than_5args/sort_argument_size5.o
+gcc -Wall -Wextra -Werror -I includes -c less_than_5args/sort_than_6args.c -o less_than_5args/sort_than_6args.o
+gcc -Wall -Wextra -Werror -I includes -c main.c -o main.o
+gcc -Wall -Wextra -Werror -I includes srcs/binary_search.o srcs/check_error.o srcs/find_max_value.o srcs/new_node_data.o srcs/sort_compression.o srcs/bubble_sort.o srcs/count_bits.o srcs/push.o srcs/return_error.o srcs/check_array_sorted.o srcs/check_null.o srcs/is_sorted.o srcs/radix_sort.o srcs/count_nodes.o operations/ra.o operations/rra.o operations/sa.o operations/rb.o libft/ft_atoi.o libft/ft_isdigit.o libft/ft_lstsize.o libft/ft_memcpy.o libft/ft_memset.o list/add_back.o list/first_node.o list/ft_lstlast.o list/pop_back.o list/push_node.o list/list_free.o less_than_5args/sort_argument_size3.o less_than_5args/sort_argument_size4.o less_than_5args/sort_argument_size5.o less_than_5args/sort_than_6args.o main.o -o push_swap
+make: Leaving directory '/root/push_swap'
+ 

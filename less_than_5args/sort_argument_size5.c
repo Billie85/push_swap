@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 23:01:42 by root              #+#    #+#             */
-/*   Updated: 2022/06/03 21:51:12 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:05:49 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	sort_argument_size5(t_node *stack_a)
 	move_value_to_b = NULL;
 	move_value_to_a = NULL;
 	stack_b = first_node(-1);
+	if (stack_b == NULL)
+		return (free(stack_b));
 	while (ft_lstsize(stack_a) > 3)
 	{
 		tmp = stack_a->next;

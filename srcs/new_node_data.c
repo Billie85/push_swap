@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 22:48:33 by root              #+#    #+#             */
-/*   Updated: 2022/06/03 19:29:04 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:14:55 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ t_node	*new_node_data(int argc, int *array_result)
 
 	i = 0;
 	stack_a = first_node(-1);
+	if (stack_a == NULL)
+		free(stack_a);
 	while (i < argc - 1)
 	{
 		new_node = malloc(sizeof(t_node));

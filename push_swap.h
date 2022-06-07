@@ -6,14 +6,12 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/02 12:46:13 by root              #+#    #+#             */
-/*   Updated: 2022/06/03 23:43:41 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:37:00 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-# define STACK_MAX 2147483647
-# define MAX_BITS
 # define ERROR -1
 # define SUCCESS 1
 

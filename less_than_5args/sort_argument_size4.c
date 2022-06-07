@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 23:00:14 by root              #+#    #+#             */
-/*   Updated: 2022/06/03 21:53:54 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:10:42 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	sort_argument_size4(t_node *stack_a)
 	move_value_to_b = NULL;
 	move_value_to_a = NULL;
 	stack_b = first_node(-1);
+	if (stack_b == NULL)
+		return (free(stack_b));
 	while (stack_a->next->data != 0)
 		ra(&stack_a);
 	move_value_to_b = pop_back(stack_a->next);
