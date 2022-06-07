@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 22:47:27 by root              #+#    #+#             */
-/*   Updated: 2022/06/02 12:45:18 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:44:20 by kayumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	binary_search(int array[], int number_total, int element)
 	int	middle;
 
 	left = 0;
-	right = number_total -1;
+	right = number_total - 1;
 	while (left <= right)
 	{
 		middle = (left + right) / 2;

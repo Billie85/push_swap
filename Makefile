@@ -1,5 +1,5 @@
 SRCS    = binary_search.c check_error.c find_max_value.c new_node_data.c sort_compression.c\
-bubble_sort.c count_bits.c push.c return_error.c\
+bubble_sort.c count_bits.c return_error.c\
 check_array_sorted.c check_null.c is_sorted.c radix_sort.c count_nodes.c
 
 OPERATIONS_SRCS = ra.c rra.c sa.c rb.c

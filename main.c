@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 23:02:53 by root              #+#    #+#             */
-/*   Updated: 2022/06/08 01:25:08 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:43:49 by kayumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int	main_helper(int argc, int *copy_array, int *origin_arg)
 	if (stack_a == NULL)
 		return (free_two_data(&copy_array, &origin_arg));
 	if (argc <= 6)
-		sort_than_6args(stack_a, argc -1);
+		sort_than_6args(stack_a, argc - 1);
 	else
 		radix_sort(stack_a, bits_width, argc);
 	list_free(&stack_a);

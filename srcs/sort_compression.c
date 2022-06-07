@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 22:50:35 by root              #+#    #+#             */
-/*   Updated: 2022/06/04 21:23:18 by root             ###   ########.fr       */
+/*   Updated: 2022/06/08 01:44:09 by kayumi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	*sort_compression(int argc, int *copy_atoi, int *normal_argument)
 		if (result == -1)
 			break ;
 		else
-		array_result[i] = result;
+			array_result[i] = result;
 		i++;
 	}
 	return (array_result);
