@@ -1,3 +1,4 @@
+#MAIN = main.c
 SRCS    = binary_search.c check_error.c find_max_value.c new_node_data.c sort_compression.c\
 bubble_sort.c count_bits.c return_error.c\
 check_array_sorted.c check_null.c is_sorted.c radix_sort.c count_nodes.c
@@ -38,14 +39,18 @@ OBJS += $(OPERATIONS_SRCS_OBJS)
 OBJS += $(LIBFT_SRCS_OBJS)
 OBJS += $(LIST_SRCS_OBJS)
 OBJS += $(LESS_THAN_5ARGS_SRCS_OBJS)
+OBJS += main.o
 
-$(NAME)	: $(OBJS) main.o
-	gcc $(CFLAGS) $(OBJS) main.o -o $(NAME)
+$(NAME)	: $(OBJS)
+	gcc $(CFLAGS) $(OBJS) -o $(NAME)
 #gcc -g libft/*.c list/*.c srcs/*.c operations/*.c main.c less_than_5args/*.c
 #gcc ${CFLAGS} main.c $(SRCS_PATH) $(OPERATIONS_SRCS_PATH) $(LIBFT_SRCS_PATH) $(LESS_THAN_5ARGS_SRCS_PATH) $(LIST_SRCS_PATH) -o $(NAME)
 
 %.o : %.c
 	gcc $(CFLAGS) -c $< -o $@
+
+main.o : main.c
+	$(CC) $(CFRAGS) -c main.c
 
 test2	:
 	make
@@ -73,7 +78,7 @@ test7	:
 
 
 clean	: 
-	$(RM) $(OBJS) $(OBJS_B)
+	$(RM) $(OBJS)
 
 fclean	: clean
 	$(RM) $(NAME)
